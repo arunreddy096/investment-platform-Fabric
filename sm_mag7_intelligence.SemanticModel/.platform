@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "sm_mag7_intelligence"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4dcbe883-7f4e-81ac-4b1e-e283ca2bb421"
+  }
+}

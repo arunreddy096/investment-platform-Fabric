@@ -1,0 +1,9 @@
+expression 'DirectLake - lh_investment' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/f94bfd9e-73f5-4cb6-ae15-a6654ddd67f5/f7e44b77-044a-4dcc-906f-26afecf74064", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 3950b476-9056-405a-ba21-845ce823ccbc
+
+	annotation PBI_IncludeFutureArtifacts = False
+
