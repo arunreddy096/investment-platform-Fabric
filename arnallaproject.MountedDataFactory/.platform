@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MountedDataFactory",
+    "displayName": "arnallaproject"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "807c07a4-e360-9e74-4b5e-aaf052f364d2"
+  }
+}

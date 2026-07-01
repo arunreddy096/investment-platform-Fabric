@@ -1,0 +1,83 @@
+table stock_intelligence
+	lineageTag: 073e9397-dc9a-46e5-914d-75780e27e7c3
+	sourceLineageTag: [dbo].[stock_intelligence]
+
+	column ticker
+		dataType: string
+		lineageTag: 3d955050-2341-4448-96b7-97a2bd19118b
+		sourceLineageTag: ticker
+		summarizeBy: none
+		sourceColumn: ticker
+
+		annotation SummarizationSetBy = Automatic
+
+	column latest_date
+		dataType: string
+		lineageTag: 736473d6-7b8b-458e-bc15-903107d43939
+		sourceLineageTag: latest_date
+		summarizeBy: none
+		sourceColumn: latest_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column latest_close
+		dataType: string
+		lineageTag: da704363-1968-4947-bc9f-74a2864a0405
+		sourceLineageTag: latest_close
+		summarizeBy: none
+		sourceColumn: latest_close
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_daily_return
+		dataType: string
+		lineageTag: be3dab3f-b143-4300-b0f5-8b224fb7e876
+		sourceLineageTag: avg_daily_return
+		summarizeBy: none
+		sourceColumn: avg_daily_return
+
+		annotation SummarizationSetBy = Automatic
+
+	column latest_7d_return
+		dataType: string
+		lineageTag: 984e71cd-5b84-4540-a628-4fc63821760b
+		sourceLineageTag: latest_7d_return
+		summarizeBy: none
+		sourceColumn: latest_7d_return
+
+		annotation SummarizationSetBy = Automatic
+
+	column latest_volatility
+		dataType: string
+		lineageTag: 402d67d4-db4d-4af5-8f5a-dc51341a4446
+		sourceLineageTag: latest_volatility
+		summarizeBy: none
+		sourceColumn: latest_volatility
+
+		annotation SummarizationSetBy = Automatic
+
+	column ai_summary
+		dataType: string
+		lineageTag: 159330ef-d44b-4ffd-a1d3-2c0e1320b54a
+		sourceLineageTag: ai_summary
+		summarizeBy: none
+		sourceColumn: ai_summary
+
+		annotation SummarizationSetBy = Automatic
+
+	column gold_updated_at
+		dataType: string
+		lineageTag: 6baf9c20-b3af-425f-b8e9-841f82bdc016
+		sourceLineageTag: gold_updated_at
+		summarizeBy: none
+		sourceColumn: gold_updated_at
+
+		annotation SummarizationSetBy = Automatic
+
+	partition stock_intelligence = entity
+		mode: directLake
+		source
+			entityName: stock_intelligence
+			schemaName: dbo
+			expressionSource: 'DirectLake - lh_investment'
+
